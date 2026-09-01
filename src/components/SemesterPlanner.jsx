@@ -1,18 +1,33 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function SemesterPlanner({ courses, courseStatuses, onStatusChange }) {
-  const [semesters, setSemesters] = useState([
-    {
-      id: 1,
-      name: "Fall 2026",
-      courses: [],
-    },
-    {
-      id: 2,
-      name: "Spring 2027",
-      courses: [],
-    },
-  ]);
+  const [semesters, setSemesters] = useState(() => {
+    const savedSemesters = localStorage.getItem(
+        "courseflowSemesters"
+    );
+
+    return savedSemesters
+        ? JSON.parse(savedSemesters)
+        : [
+            {
+              id: 1,
+              name: "Fall 2026",
+              courses: [],
+            },
+            {
+            id: 2,
+              name: "Spring 2027",
+              courses: [],
+            },
+        ];
+    });
+
+    useEffect(() => {
+        localStorage.setItem(
+            "courseflowSemesters",
+            JSON.stringify(semesters)
+        );
+    }, [semesters]);
 
   const [term, setTerm] = useState("Fall");
   const [year, setYear] = useState("2027");
