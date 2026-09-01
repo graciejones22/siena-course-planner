@@ -1,0 +1,190 @@
+[
+  {
+    "code": "CSIS-110",
+    "name": "Introduction to Computer Science",
+    "credits": 3,
+    "department": "Computer Science",
+    "prerequisites": []
+  },
+  {
+    "code": "CSIS-120",
+    "name": "Software Development",
+    "credits": 4,
+    "department": "Computer Science",
+    "prerequisites": {
+      "any": ["CSIS-110", "DATA-110"]
+    }
+  },
+  {
+    "code": "CSIS-210",
+    "name": "Data Structures",
+    "credits": 4,
+    "department": "Computer Science",
+    "prerequisites": ["CSIS-120"]
+  },
+  {
+    "code": "CSIS-225",
+    "name": "Advanced Programming",
+    "credits": 3,
+    "department": "Computer Science",
+    "prerequisites": ["CSIS-210"]
+  },
+  {
+    "code": "CSIS-385",
+    "name": "Design and Analysis of Algorithms",
+    "credits": 3,
+    "department": "Computer Science",
+    "prerequisites": {
+      "all": [
+        "CSIS-210",
+        {
+          "any": ["MATH-250", "CSIS-251"]
+        }
+      ]
+    }
+  },
+  {
+    "code": "CSIS-411",
+    "name": "Professional Practice in Computer Science",
+    "credits": 1,
+    "department": "Computer Science",
+    "prerequisites": ["CSIS-210"]
+  },
+  {
+    "code": "MATH-110",
+    "name": "Calculus I",
+    "credits": 4,
+    "department": "Mathematics",
+    "prerequisites": []
+  },
+  {
+    "code": "MATH-120",
+    "name": "Calculus II",
+    "credits": 4,
+    "department": "Mathematics",
+    "prerequisites": ["MATH-110"]
+  },
+  {
+    "code": "BAAS-130",
+    "name": "Business Mathematics",
+    "credits": 3,
+    "department": "Business",
+    "prerequisites": {
+      "any": ["BAAS-105", "MATH-101", "MATH-110"]
+    }
+  },
+  {
+    "code": "BAAS-140",
+    "name": "Quantitative Business Analytics",
+    "credits": 3,
+    "department": "Business",
+    "prerequisites": {
+      "any": ["BAAS-130", "MATH-110"]
+    }
+  },
+  {
+    "code": "BAAS-200",
+    "name": "Business Statistics I",
+    "credits": 3,
+    "department": "Business",
+    "prerequisites": {
+      "all": [
+        {
+          "any": ["BAAS-130", "MATH-110"]
+        },
+        {
+          "any": ["CSIS-010", "CSIS-011", "CSIS-SSX"]
+        }
+      ]
+    }
+  },
+  {
+    "code": "MATH-250",
+    "name": "Discrete Structures",
+    "credits": 4,
+    "department": "Mathematics",
+    "prerequisites": {
+      "all": [
+        {
+          "any": ["MATH-120", "BAAS-140"]
+        },
+        "CSIS-120"
+      ]
+    }
+  },
+  {
+    "code": "CSIS-350",
+    "name": "Database Management Systems",
+    "credits": 3,
+    "department": "Computer Science",
+    "prerequisites": ["CSIS-210"]
+  },
+  {
+    "code": "CSIS-390",
+    "name": "Web Application Development",
+    "credits": 3,
+    "department": "Computer Science",
+    "prerequisites": ["CSIS-210"]
+  },
+  {
+    "code": "CSIS-410",
+    "name": "Software Engineering I",
+    "credits": 3,
+    "department": "Computer Science",
+    "prerequisites": ["CSIS-225"],
+    "restrictions": ["Senior class standing"]
+  },
+  {
+    "code": "CSIS-415",
+    "name": "Software Engineering II",
+    "credits": 3,
+    "department": "Computer Science",
+    "prerequisites": ["CSIS-410"]
+  },
+  {
+    "code": "SCDV-480",
+    "name": "Internship in Science",
+    "credits": {
+      "min": 1,
+      "max": 3
+    },
+    "department": "Science",
+    "prerequisites": [],
+    "requirements": [
+      "Junior standing",
+      "14 or more credits in a single department in the School of Science",
+      "Permission of the School of Science Intern Coordinator"
+    ]
+  },
+  {
+    "code": "BAAS-210",
+    "name": "Business Statistics II",
+    "credits": 3,
+    "department": "Business",
+    "prerequisites": {
+      "any": [
+        "ATDV-110",
+        "BAAS-200",
+        "STAT-275",
+        "MATH-470",
+        "QBUS-200"
+      ]
+    }
+  },
+  {
+    "code": "STAT-275",
+    "name": "Introductory Statistics with Computation",
+    "credits": 3,
+    "department": "Statistics",
+    "prerequisites": {
+      "all": [
+        {
+          "any": ["MATH-110", "MATH-105"]
+        },
+        {
+          "any": ["MATH-115", "MATH-120"]
+        }
+      ]
+    }
+  }
+]

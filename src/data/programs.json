@@ -1,0 +1,122 @@
+[
+  {
+    "id": "cs-software-development",
+    "name": "Computer Science - Software Development",
+    "type": "major",
+    "department": "Computer Science",
+    "requirements": [
+      {
+        "id": "cs-kernel",
+        "name": "Computer Science Kernel",
+        "creditsRequired": 18,
+        "requirements": [
+          {
+            "type": "required",
+            "courses": [
+              "CSIS-110",
+              "CSIS-120",
+              "CSIS-210",
+              "CSIS-225",
+              "CSIS-385",
+              "CSIS-411"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cs-auxiliary",
+        "name": "Auxiliary Requirements",
+        "creditsRequired": { "min": 12, "max": 13 },
+        "requirements": [
+          {
+            "type": "choose-one-path",
+            "options": [
+              {
+                "name": "Calculus Path",
+                "courses": [
+                  "MATH-110",
+                  "MATH-120"
+                ]
+              },
+              {
+                "name": "Business Mathematics Path",
+                "courses": [
+                  "BAAS-130",
+                  "BAAS-140",
+                  "BAAS-200"
+                ]
+              }
+            ]
+          },
+          {
+            "type": "required",
+            "courses": [
+              "MATH-250"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "software-development-track",
+        "name": "Software Development Track",
+        "creditsRequired": { "min": 21, "max": 22 },
+        "requirements": [
+          {
+            "type": "required",
+            "courses": [
+              "CSIS-350",
+              "CSIS-390",
+              "CSIS-410",
+              "CSIS-415"
+            ]
+          },
+          {
+            "type": "choose-one",
+            "options": [
+              {
+                "name": "Science Internship",
+                "courses": [
+                  "SCDV-480"
+                ]
+              },
+              {
+                "name": "Upper-Level CSIS Course",
+                "courseFilter": {
+                  "department": "Computer Science",
+                  "minLevel": 300,
+                  "minCredits": 3,
+                  "maxCredits": 4
+                }
+              }
+            ]
+          },
+          {
+            "type": "credit-minimum",
+            "creditsRequired": 6,
+            "courseFilter": {
+              "department": "Computer Science",
+              "minLevel": 300
+            }
+          },
+          {
+            "type": "choose-one",
+            "options": [
+              {
+                "name": "Business Statistics II",
+                "courses": [
+                  "BAAS-210"
+                ]
+              },
+              {
+                "name": "Introductory Statistics with Computation",
+                "courses": [
+                  "STAT-275"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
