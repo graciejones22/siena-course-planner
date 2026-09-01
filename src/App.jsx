@@ -4,6 +4,7 @@ import CourseCard from "./components/CourseCard";
 import "./App.css";
 import programs from "./data/programs.json";
 import DegreeProgress from "./components/DegreeProgress";
+import SemesterPlanner from "./components/SemesterPlanner";
 
 function App() {
   const [selectedDepartment, setSelectedDepartment] =
@@ -50,6 +51,12 @@ function App() {
         courses={courses}
         courseStatuses={courseStatuses}
        />
+
+      <SemesterPlanner
+        courses={courses}
+        courseStatuses={courseStatuses}
+       onStatusChange={handleStatusChange}
+      />
 
       <div className="catalog-header">
         <h2>Course Catalog</h2>
