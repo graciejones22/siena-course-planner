@@ -122,3 +122,22 @@ body {
   background: #2563eb;
   transition: width 0.3s ease;
 }
+
+.prerequisite-warning {
+  margin-top: 16px;
+  padding: 12px;
+  border: 1px solid #f59e0b;
+  border-radius: 8px;
+  background: #fffbeb;
+  color: #92400e;
+  font-size: 14px;
+}
+
+.prerequisite-warning strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.prerequisite-warning p {
+  margin: 4px 0 0;
+}

@@ -78,6 +78,8 @@ function App() {
             course={course}
             status={courseStatuses[course.code] || "Not Taken"}
             onStatusChange={handleStatusChange}
+            courseStatuses={courseStatuses}
+            courses={courses}
           />
         ))}
       </div>

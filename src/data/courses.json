@@ -37,9 +37,7 @@
     "prerequisites": {
       "all": [
         "CSIS-210",
-        {
-          "any": ["MATH-250", "CSIS-251"]
-        }
+        "MATH-250"
       ]
     }
   },
