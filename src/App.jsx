@@ -45,7 +45,11 @@ function App() {
         </p>
       </header>
 
-      <DegreeProgress program={programs[0]} courses={courses} />
+      <DegreeProgress 
+        program={programs[0]} 
+        courses={courses}
+        courseStatuses={courseStatuses}
+       />
 
       <div className="catalog-header">
         <h2>Course Catalog</h2>
